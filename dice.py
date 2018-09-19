@@ -1,17 +1,17 @@
-#dice program
 import random
 
 
 i = 0
 while True:
-    x = int(input("press 1 to roll and 0 to quit"))
-    if(x==1):
+    x = input("press r to roll and q to quit")
+    if(x=="r"):
         print(random.randint(1,6))
-    else:
+    elif(x=="q"):
         print("sorry u lose")
         exit()
-
-
+    else:
+        print("Enter a valied alphabet")
+        
 
 
 
