@@ -3,7 +3,7 @@ player2 = 0
 
 a = range(1,11);b = range(11,21)[::-1];c = range(21,31);d = range(31,41)[::-1];e = range(41,51);f = range(51,61)[::-1];g = range(61,71);
 h = range(71,81)[::-1];i = range(81,91);j = range(91,101)[::-1]
-print "Snakes and Ladders game"
+print "Snakes and Ladders game by Eshwar"
 print j,'\n',i,'\n',h,'\n',g,'\n',f,'\n',e,'\n',d,'\n',c,'\n',b,'\n',a
 
 def check_for_snakes_and_ladders(n):
