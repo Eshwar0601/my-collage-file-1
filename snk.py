@@ -42,10 +42,12 @@ while(count<= 100):
     elif(count == 93):
         count = 64
         print("you got a snake ur current position is ",count)
-    elif(count >= 100):
-        print("you won the game")
-    if(count + r > 100):
+    elif(count == 100):
+        print("you won the game congrats!!!!!")
         break
-        print("roll the die again")
+    if(count + r > 100):
+        count = count -r       
+        print("your position exceeded 100 please try again !!!")
+
     
         
