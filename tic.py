@@ -24,8 +24,18 @@ def print_borad():
 
 
 while True:
-    os.system("clear")
     print_borad()
     choice = int(input("please chose an empty slot"))
 
-    board[choice] = 'x'
+
+    if board[choice] == ' ':
+        board[choice] ='x'
+    else:
+        print("sorry please select an empty slot")
+
+    #chweack for win
+    if(board[1]=='x' and board[2]== 'x' and board[3]=='x'):
+        print_borad()
+        print("x wins!!!")
+        break
+    
